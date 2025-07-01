@@ -1,0 +1,79 @@
+/* Home.css */
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  min-height: 50vh;
+  position: relative;
+  background: linear-gradient(to bottom right, #0a0a23, #1e1e40);
+  color: var(--text);
+}
+
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background: url('/stars-bg.png') repeat; */
+  opacity: 0.08;
+  z-index: 1;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  gap: 30px;
+  z-index: 2;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .home-container {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+}
+
+.home-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent);
+  box-shadow: 0 0 20px var(--accent);
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+.home-right {
+  flex: 2;
+  padding: 10px;
+}
+
+.home-right h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: var(--accent);
+}
+
+.home-right .highlight {
+  color: #ff77e9;
+}
+
+.home-right p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #f1f1f1;
+}

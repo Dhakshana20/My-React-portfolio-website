@@ -1,0 +1,21 @@
+.about-section {
+  background: linear-gradient(to bottom, #0f0f1c, #1e1e2f);
+  padding: 60px 20px;
+  color: #fff;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ffd6ff;
+  text-shadow: 0 0 10px #ff9aff;
+}

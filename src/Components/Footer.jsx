@@ -1,18 +1,19 @@
+import { Link } from "react-router-dom";
 import './Footer.css';
 
 function Footer() {
   return (
-    <footer className="footer" id="contact">  {/* Added id="contact" here */}
+    <footer className="footer">
       <div className="footer-top">
         <div className="footer-links">
-        
+          
           <div className="footer-column">
             <h4>Quick Links</h4>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/skills">Skills</Link>
+            <Link to="/projects">Projects</Link>
+            <Link to="/contact">Contact</Link>
           </div>
 
           <div className="footer-column">
@@ -26,15 +27,15 @@ function Footer() {
           <div className="footer-column">
             <h4>Address</h4>
             <p>35, Thangam Womens Hostel</p>
-            <p>S.South Shivan Kovil Street</p>
+            <p>S. South Shivan Kovil Street</p>
             <p>Vadapalani, Chennai</p>
           </div>
-          
+
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Dhakshana | Built with React 💻</p>
+        <p>© {new Date().getFullYear()} Dhakshana R | Built with React </p>
       </div>
     </footer>
   );

@@ -1,12 +1,14 @@
+// src/Components/Projects.jsx
 import './Projects.css';
 
 function Projects() {
   return (
     <section id="projects" className="projects-section">
-      
+      <div className="stars"></div>
 
       <div className="projects-content">
-        <h2 className="section-title">My Projects</h2>
+        <h2 className="section-title"> My <span>Projects</span></h2>
+
         <div className="projects-grid">
 
           <div className="project-card">
@@ -26,7 +28,14 @@ function Projects() {
           <div className="project-card">
             <h4>🏦 IOB Bank Website</h4>
             <p>
-              A static bank website created using semantic HTML5, CSS3 and Bootstrap. Designed to be responsive and accessible.
+              A static bank website created using semantic HTML, CSS and Bootstrap. Designed to be responsive and accessible.
+            </p>
+          </div>
+
+          <div className="project-card">
+            <h4>🎵 Moodify Music App</h4>
+            <p>
+              A mood-based music player built with React. Plays Tamil songs based on user-selected moods and displays matching quotes. Features voice-over, dark UI theme, and location-aware greeting.
             </p>
           </div>
 
