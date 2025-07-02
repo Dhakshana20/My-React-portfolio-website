@@ -1,5 +1,3 @@
-/* src/Components/Navbar.css */
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -12,17 +10,20 @@
   z-index: 1000;
 }
 
+/* Logo */
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--accent, #f39c12);
 }
 
+/* Nav Links - visible in desktop view */
 .nav-links {
   display: flex;
   gap: 24px;
 }
 
+/* Individual Link Styles */
 .nav-links a {
   text-decoration: none;
   color: white;
@@ -34,24 +35,30 @@
   color: var(--accent, #f39c12);
 }
 
+/* Button + Toggle Wrapper */
 .actions {
   display: flex;
-  gap: 10px;
   align-items: center;
+  gap: 10px;
 }
 
+/* Mobile ☰ Toggle Button - hidden by default */
 .menu-toggle {
   display: none;
-  font-size: 24px;
+  font-size: 28px;
   background: none;
   border: none;
   color: white;
   cursor: pointer;
+  z-index: 1001; /* Always above nav menu */
 }
 
-/* Mobile Responsive */
+/* ------------------ */
+/* 📱 Mobile View */
+/* ------------------ */
 @media (max-width: 768px) {
   .nav-links {
+    display: none;
     position: absolute;
     top: 60px;
     left: 0;
@@ -59,10 +66,10 @@
     flex-direction: column;
     background: #1a093e;
     width: 100vw;
-    padding: 20px;
-    display: none;
+    padding: 20px 0;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
   }
 
   .nav-links.open {

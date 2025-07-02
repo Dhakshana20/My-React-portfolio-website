@@ -1,14 +1,13 @@
-// src/Components/Navbar.jsx
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
-function Navbar({ toggleTheme, darkMode }) {
+function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav className="navbar">
-      <div className="logo">Dhakshana </div>
+      <div className="logo">Dhakshana</div>
 
       <div className={`nav-links ${menuOpen ? "open" : ""}`}>
         <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
@@ -19,8 +18,6 @@ function Navbar({ toggleTheme, darkMode }) {
       </div>
 
       <div className="actions">
-        
-
         <button
           className="menu-toggle"
           onClick={() => setMenuOpen(!menuOpen)}
