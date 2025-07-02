@@ -1,74 +1,68 @@
+/* Footer.css */
+
 .footer {
-  background-color:  #281252;
-  color: #d1d5db;
+  background-color: #1c1c3b;
+  color: white;
   padding: 40px 20px 20px;
-  font-family: Arial, sans-serif;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .footer-top {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
   justify-content: space-between;
-  width: 100%;
-  max-width: 1000px;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: left;
 }
 
 .footer-column {
-  flex: 1 1 220px;
-  min-width: 180px;
+  flex: 1;
+  min-width: 200px;
 }
 
 .footer-column h4 {
-  color: #f97316;
-  font-size: 1rem;
+  color: var(--accent, #f39c12);
   margin-bottom: 10px;
 }
 
-.footer-column a {
+.footer-column a,
+.footer-column p {
   display: block;
-  color: #d1d5db;
-  font-size: 0.95rem;
-  text-decoration: none;
   margin-bottom: 8px;
-  transition: color 0.3s ease;
+  color: #ddd;
+  text-decoration: none;
+  font-size: 0.95rem;
 }
 
 .footer-column a:hover {
-  color: #facc15;
+  color: var(--accent, #ff77e9);
 }
-
-
 
 .footer-bottom {
-  text-align: center;
-  border-top: 1px solid #374151;
-  padding-top: 15px;
+  margin-top: 30px;
   font-size: 0.85rem;
-  color: #eff2f7;
+  color: #aaa;
+  border-top: 1px solid #444;
+  padding-top: 15px;
 }
 
-/* Responsive */
+/* ✅ Mobile View Fix */
 @media (max-width: 768px) {
   .footer-links {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
   }
 
   .footer-column {
     width: 100%;
+    max-width: 400px;
     margin-bottom: 20px;
-  }
-
-  .footer {
-    text-align: left;
   }
 }
