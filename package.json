@@ -1,7 +1,7 @@
 {
   "name": "react-portfolio",
   "private": true,
-  "homepage": "https://Dhakshana20.github.io/My-React-portfolio-website",
+"homepage": "https://Dhakshana20.github.io/My-React-portfolio-website",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -13,7 +13,6 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "framer-motion": "^12.20.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
