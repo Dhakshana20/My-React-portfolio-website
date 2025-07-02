@@ -13,6 +13,7 @@ function App() {
     <Router>
       <Navbar /> {/* Removed props */}
       <Routes>
+        
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
