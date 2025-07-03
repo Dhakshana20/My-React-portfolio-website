@@ -32,7 +32,7 @@
 }
 
 .section-title span {
-  color: #ff77e9;
+   color: var(--accent);
 }
 
 .projects-grid {

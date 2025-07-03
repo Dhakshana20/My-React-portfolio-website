@@ -32,7 +32,7 @@
 }
 
 .contact-content h2 span {
-  color: #ff77e9;
+  color: var(--accent);
 }
 
 .contact-form {

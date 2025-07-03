@@ -1,5 +1,5 @@
+// src/components/Navbar.jsx
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
@@ -10,21 +10,16 @@ function Navbar() {
       <div className="logo">Dhakshana</div>
 
       <div className={`nav-links ${menuOpen ? "open" : ""}`}>
-        <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
-        <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
-        <Link to="/skills" onClick={() => setMenuOpen(false)}>Skills</Link>
-        <Link to="/projects" onClick={() => setMenuOpen(false)}>Projects</Link>
-        <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
+        <a href="#home" onClick={() => setMenuOpen(false)}>Home</a>
+        <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
+        <a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a>
+        <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
+        <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
       </div>
 
-      <div className="actions">
-        <button
-          className="menu-toggle"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          ☰
-        </button>
-      </div>
+      <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+        ☰
+      </button>
     </nav>
   );
 }

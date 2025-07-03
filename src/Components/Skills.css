@@ -1,5 +1,11 @@
 /* src/Components/Skills.css */
 
+:root {
+  --accent: #61dafb;
+  --text: #ffffff;
+}
+
+/* Main Section */
 .skills-section {
   padding: 80px 20px;
   background: linear-gradient(to bottom right, #0a0a23, #1e1e40);
@@ -8,15 +14,20 @@
   z-index: 1;
 }
 
+/* Background Stars (optional image or keep hidden) */
 .stars {
   position: absolute;
-  width: 80vw;
+  width: 100%;
   height: 100%;
- 
+  top: 0;
+  left: 0;
   opacity: 0.08;
   z-index: 0;
+  background-repeat: repeat;
+  background-image: url("../assets/stars.png"); /* optional - comment if not used */
 }
 
+/* Content Container */
 .skills-content {
   max-width: 1000px;
   margin: 0 auto;
@@ -25,6 +36,7 @@
   text-align: center;
 }
 
+/* Heading Styles */
 .skills-title {
   font-size: 2.2rem;
   margin-bottom: 40px;
@@ -32,9 +44,36 @@
 }
 
 .skills-title span {
-  color: #ff77e9;
+  color: var(--accent);
 }
 
+/* Tab Buttons */
+.skill-tabs {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill-tabs button {
+  background-color: transparent;
+  border: 2px solid var(--accent);
+  color: var(--text);
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.skill-tabs button.active,
+.skill-tabs button:hover {
+  background-color: var(--accent);
+  color: #000;
+}
+
+/* Circular Skills Layout */
 .circular-skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -57,6 +96,7 @@
   transform: scale(1.05);
 }
 
+/* Progress Circle SVG */
 .progress-circle {
   position: relative;
   width: 100px;
@@ -95,4 +135,23 @@
   color: var(--text);
   font-size: 1.1rem;
   font-weight: bold;
+}
+
+/* Project Tags */
+.project-grid {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.project-tag {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--accent);
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 1rem;
+  color: var(--text);
+  box-shadow: 0 0 10px var(--accent);
 }
