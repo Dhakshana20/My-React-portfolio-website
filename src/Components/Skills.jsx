@@ -9,23 +9,24 @@ function Skills() {
     { name: "HTML", level: 90 },
     { name: "CSS", level: 85 },
     { name: "Bootstrap", level: 80 },
-    { name: "React", level: 60 }, // 🔁 Updated to 60%
+    { name: "React", level: 60 }, 
   ];
 
   const frontendProjects = [
-    "🌐 Portfolio Website",
+    "🏦 IOB Bank Website",
+    "📚 Bookstore Website",
     "🎵 Moodify Music App"
   ];
 
   const backendSkills = [
     { name: "Java (Core)", level: 60 },
     { name: "MySQL", level: 85 },
-    { name: "Python", level: 55 }, // ✅ Added Python
+    { name: "Python", level: 55 }, 
   ];
 
   const backendProjects = [
     "🍽️ Swiggy Console App",
-    "🛡️ Malicious URL Detection (ML & DL)" // ✅ Added project
+    "🛡️ Malicious URL Detection (ML & DL)"
   ];
 
   const renderCircleCard = (skill, index) => (
