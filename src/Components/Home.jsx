@@ -24,7 +24,7 @@ function Home() {
             like Heart Attack Prediction and Malicious URL Detection.  
             <br /><br />
             I’m also exploring <strong>Java</strong> to strengthen my backend development skills 
-            and actively seeking full-time opportunities in the UAE to contribute my expertise 
+            and actively seeking full-time opportunities to contribute my expertise 
             and grow as a developer.  
           </p>
         </div>
