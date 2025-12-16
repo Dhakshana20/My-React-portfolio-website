@@ -22,15 +22,16 @@ function Footer() {
             <h4>Connect</h4>
             <a href="https://github.com/Dhakshanasundari" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://linkedin.com/in/dhakshana-r" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="mailto:dhakshanaramachandran@gmail.com">dhakshanaramachandran@gmail.com</a>
-            <p>📞 +971 050 568 3757</p>
+            <a href="mailto:dhakshanaramachandran12@gmail.com">dhakshanaramachandran12@gmail.com</a>
+            <p>📞 +91 7845093652</p>
           </div>
 
           {/* Column 3: Address */}
           <div className="footer-column">
             <h4>Address</h4>
-            <p>Karama Live Restaurant</p>
-            <p>First Floor, Room No 6</p>
+            <p>3/131,
+              A Vairavapuram 3rd streett</p>
+            
             <p>Dubai, UAE</p>
           </div>
 
